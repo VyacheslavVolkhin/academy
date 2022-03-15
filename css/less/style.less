@@ -221,6 +221,9 @@ article.container#body {
 }
 .breadcrumbs {
     display: block;
+    &+.title-box {
+        margin-top: 20px;
+    }
 }
 .order-box {
     margin-bottom: 30px;
@@ -423,7 +426,17 @@ article.container#body {
         padding: 0;
     }
 }
+@media (min-width: 461px) {
+    article.container#body {
+        padding-top: 100px;
+    }
+}
 @media (min-width: 761px) {
+    .breadcrumbs {
+        &+.title-box {
+            margin-top: 48px;
+        }
+    }
     .popup-box {
         .popup-content-wrap {
             padding: 30px 30px 60px 30px;
@@ -596,13 +609,18 @@ article.container#body {
         }
     }
 }
+@media (min-width: 1181px) {
+    article.container#body {
+        padding-top: 0px;
+    }
+}
 @media (min-width: 1200px) {
     .h1-title {
         font-size: 42px;
     }
     .btn-action {
-        height: 88px;
-        font-size: 20px;
+        height: 70px;
+        font-size: 18px;
         line-height: 1.35;
         .button-title {
             span {
